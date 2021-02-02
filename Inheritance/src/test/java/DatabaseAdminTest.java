@@ -24,18 +24,18 @@ public class DatabaseAdminTest {
 
     @Test
     public void canGetSalary(){
-        assertEquals(30000, this.databaseAdmin.getSalary(), 0.01);
+        assertEquals(30000, this.databaseAdmin.getSalary(), 0.0);
     }
 
     @Test
     public void canRaiseSalary(){
         databaseAdmin.raiseSalary(2500.00);
-        assertEquals(32500.00, this.databaseAdmin.getSalary(), 0.01);
+        assertEquals(32500.00, this.databaseAdmin.getSalary(), 0.0);
     }
 
     @Test
     public void canPayBonus(){
-        assertEquals(300.00, this.databaseAdmin.payBonus(), 0.01);
+        assertEquals(300.00, this.databaseAdmin.payBonus(), 0.0);
     }
 
 }
